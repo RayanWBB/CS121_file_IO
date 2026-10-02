@@ -18,14 +18,18 @@ begin main
     define int valueSum
     define string dupeWord
     define ofstream outFile
+    
+    clear lineString
     open outFile
     if outFile is open
         for each line in the file, called currentLine
             feed currentLine into lineString
-            get lineString until the next "," and assign to valueA
-            get lineString until the next "," and assign to valueB
-            get lineString until the line break and assign to dupeWord
-            assign the sum of valueA and valueB to valueSum
-            for
-
-``` 
+            if lineString isn't empty
+                get lineString until the next "," and assign to valueA
+                get lineString until the next "," and assign to valueB
+                get lineString until the line break and assign to dupeWord
+                assign the sum of valueA and valueB to valueSum
+                for valueSum
+                    print dupeWord and a space
+                print a line break
+end main
