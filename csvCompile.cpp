@@ -26,15 +26,13 @@ int main() {
 		while(!inFile.eof()){
 			getline(inFile, currentLine);
 			lineString.str(currentLine);	
-/*			
+			
 			getline(lineString, converter, ","); // read first integer
-			// converter.str(lineReader);
 			converter >> valueA; // pass first integer
 			converter.clear(); // clear converter
 			converter.str("");
 
 			getline(lineString, converter, ","); // read second integer
-			// converter.str(lineReader);
 			converter >> valueB; // pass second integer
 			converter.clear(); // clear converter
 			converter.str("");
@@ -44,10 +42,9 @@ int main() {
 			valueSum = valueA + valueB;
 			for(i = 0; i < valueSum; i++) {
 				std::cout << dupeWord << " ";
-*/			} // end for
+			} // end for
 			std::cout << std::endl;
 		} // end while
 	} // end if
-	std::cout << lineString << std::endl;
 	inFile.close();
 } // end main
